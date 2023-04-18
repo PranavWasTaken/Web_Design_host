@@ -1,12 +1,12 @@
 {
+  "name": "web_design_host",
   "version": "1.0.0",
-  "description": "FlixFarm-backend-server",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"cd moviez-rest && node index.js "
   },
-  "author": "Aditya Bhabhe",
-  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
@@ -17,5 +17,8 @@
     "mongoose": "^5.4.22",
     "mongoose-unique-validator": "^2.0.2",
     "twitter": "^1.7.1"
-  }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

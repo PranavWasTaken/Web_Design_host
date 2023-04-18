@@ -47,7 +47,14 @@ mongoose.connect(dbConfig.url, {
 
 // define a simple route
 app.get('/', (req, res) => {
-    res.json({"message": "FlixFarm Backend Server"});
+   res.sendFile(
+    path.join(__dirname,"../client/build/index.html"),
+    function (err){
+      if(err){
+        res.status(500).send(err);
+      }
+    }
+   )
 });
 
 require('./app/routes/user.routes.js')(app);
